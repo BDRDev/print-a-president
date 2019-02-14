@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "js": "webpack",
+    "watch-js": "webpack --watch",
+    "css": "node-sass --include-path sass sass/style.scss css/style.css",
+    "watch-css": "nodemon -e scss -x \"npm run css\""
   },
   "author": "",
   "license": "ISC",
@@ -20,10 +23,11 @@
     "@babel/preset-env": "^7.3.1",
     "babel-cli": "^6.26.0",
     "babel-loader": "^8.0.5",
-    "webpack": "^4.29.3"
+    "webpack": "^4.29.3",
+    "webpack-cli": "^3.2.3"
   },
   "repository": {
-  	"type": "git",
-  	"url": "https://github.com/BlakeRobertson0319/print-a-president"
+    "type": "git",
+    "url": "https://github.com/BlakeRobertson0319/print-a-president"
   }
 }

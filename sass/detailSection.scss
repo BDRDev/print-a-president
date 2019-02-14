@@ -1,0 +1,84 @@
+
+
+.api_detail_section {
+  
+  background-color: $darker-color;
+
+
+
+  height: 400px;
+
+  margin-top: 40px;
+  margin-right: 20px;
+  margin-left: 20px;
+
+  border-radius: 10px;
+
+  padding: 10px 5px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.messages {
+  width: 90%;
+
+  display: flex;
+  justify-content: center;
+
+  color: white;
+  text-align: center;
+
+  font-family: 'Montserrat Light', arial;
+}
+
+.rules {
+  font-size: 23px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  font-family: 'Montserrat Light', arial;
+}
+
+.rule {
+  font-family: 'Montserrat Light', arial;
+}
+
+.backButtonLocation {
+	height: 50px;
+	width: 100%;
+}
+
+.checkoutButton {
+  display: none;
+
+  width: 80%;
+  height: 40px;
+  margin-top: 0px;
+  border: 1px white solid;
+  //display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: white;
+  text-decoration: none;
+
+  -webkit-transition: background-color .7s, border .7s; /* For Safari 3.1 to 6.0 */
+  transition: background-color .7s, border .7s;
+
+ 
+
+  &:hover {
+    background-color: #b48f4e;
+    border: 1px #b48f4e solid;
+  }
+}
+
+.checkoutButtonWrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}

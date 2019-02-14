@@ -1,0 +1,811 @@
+/* THIS IS BLAKE'S STYLES */
+#checkedOutList {
+  margin-top: 30px; }
+
+#contact {
+  cursor: pointer; }
+
+ul li {
+  cursor: pointer;
+  position: relative;
+  padding: 12px 8px 12px 40px;
+  background: #eee;
+  font-size: 18px;
+  transition: 0.2s;
+  list-style-type: none;
+  /* make the list items unselectable */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+
+ul li.finished {
+  background: #888;
+  color: #fff;
+  text-decoration: line-through; }
+
+/* this is going to be for the div that holds the iframe and the status bar */
+#printingSection {
+  height: 80%;
+  width: 100%;
+  display: flex;
+  flex-direction: row; }
+
+#api-frame {
+  width: 75%;
+  height: 100%;
+  display: block;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0; }
+
+.api_detail_wrapper {
+  width: 25%;
+  height: 100%;
+  background-color: #7A0026; }
+
+* {
+  margin: 0;
+  font-family: 'Montserrat Light', arial; }
+
+html, body {
+  height: 100%; }
+
+h1, h2, h3, h4, h5, h6, p {
+  margin-bottom: 20px; }
+
+nav {
+  margin-bottom: 100px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 70px;
+  background-color: #363636;
+  z-index: 999; }
+  nav .linkWrap {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 10px;
+    width: 50%; }
+  nav a {
+    text-decoration: none;
+    margin-right: 13px;
+    font-size: 15px;
+    line-height: 50px;
+    font-family: 'Montserrat Light', arial;
+    color: #ffffff; }
+    nav a:hover {
+      color: lightgray; }
+    nav a:visited {
+      color: #ffffff; }
+
+.sect {
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: inline-block;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0; }
+
+.sect2 {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: inline-block;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0; }
+
+.subSection {
+  min-height: 12%;
+  background-color: #7a0026;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+  top: 0; }
+
+#calloutVideo {
+  width: 100%;
+  height: 100%;
+  display: block;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0; }
+
+.sectOne {
+  width: 100%;
+  display: inline-block;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #7a0026; }
+
+.sectTwo {
+  width: 100%;
+  display: inline-block;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0; }
+
+.sectThree {
+  width: 100%;
+  display: inline-block;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0; }
+
+.sectFour {
+  width: 100%;
+  display: inline-block;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0; }
+
+#adminPage {
+  border: 1px solid black; }
+  #adminPage th, #adminPage td {
+    padding: 5px;
+    text-align: left; }
+
+#formStyle input {
+  border-bottom: 1px solid #7a0026;
+  color: #7a0026;
+  margin: 3px;
+  padding: 3px;
+  font-size: 12px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center; }
+
+#formStyle textarea {
+  border: 1px solid #7a0026;
+  border-radius: 5px;
+  color: #7a0026;
+  margin: 3px;
+  padding: 3px;
+  font-size: 12px; }
+
+#formStyle input[type=button], #formStyle input[type=submit], #formStyle input[type=reset] {
+  background-color: #7a0026;
+  width: 25%;
+  border: none;
+  color: #ffffff; }
+
+#formButtons {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center; }
+
+.wrapperWrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+
+#aboutWrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between; }
+  #aboutWrapper #aboutTitle {
+    padding: 2%;
+    height: 75%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+    #aboutWrapper #aboutTitle h1 {
+      text-align: right;
+      font-family: "Century Gothic";
+      font-size: 650%; }
+  #aboutWrapper #aboutContent {
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+
+#contributorWrapper {
+  width: 100%;
+  min-height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between; }
+  #contributorWrapper #contributorTitle {
+    padding: 2%;
+    height: 75%;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+    #contributorWrapper #contributorTitle h1 {
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+      justify-content: space-around;
+      font-family: "Century Gothic";
+      font-size: 400%; }
+  #contributorWrapper #contributorContent {
+    padding: 2%;
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; }
+
+#collaboratorWrapper {
+  width: 100%;
+  min-height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between; }
+  #collaboratorWrapper #collaboratorTitle {
+    padding: 2%;
+    height: 75%;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+    #collaboratorWrapper #collaboratorTitle h1 {
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+      justify-content: space-around;
+      font-family: "Century Gothic";
+      font-size: 175%; }
+  #collaboratorWrapper #collaboratorContent {
+    padding: 2%;
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; }
+
+.registerModal {
+  position: fixed;
+  z-index: 99;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  visibility: hidden; }
+  .registerModal .bg {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); }
+  .registerModal .registerForm {
+    position: absolute;
+    z-index: 99;
+    background-color: #fff;
+    width: 50%;
+    left: 25%;
+    top: 25%;
+    min-height: 50%;
+    border-radius: 20px; }
+    .registerModal .registerForm .regHeader {
+      font-family: 'Montserrat', sans-serif;
+      border-bottom: solid 1px #888;
+      padding: 15px 15px 0 15px;
+      box-sizing: border-box;
+      display: flex;
+      justify-content: space-between; }
+    .registerModal .registerForm .closeWrap {
+      cursor: pointer; }
+    .registerModal .registerForm .regForm {
+      padding: 15px;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center; }
+      .registerModal .registerForm .regForm label {
+        display: block;
+        margin: 10px 0 5px 0; }
+      .registerModal .registerForm .regForm .errDiv {
+        color: red;
+        font-family: pf_fusion_sans_proheavy, sans-serif;
+        font-size: 80%; }
+      .registerModal .registerForm .regForm input {
+        display: block;
+        height: 30px;
+        padding-left: 5px;
+        border: none;
+        border-bottom: 1px solid #7a0026;
+        margin-bottom: 8px;
+        color: #7a0026; }
+      .registerModal .registerForm .regForm .regSubmit {
+        width: 100%;
+        border: 1px solid #7a0026;
+        background-color: white;
+        cursor: pointer;
+        margin-top: 20px; }
+    .registerModal .registerForm .regSub {
+      display: inline-block;
+      border: none;
+      margin-top: 20px;
+      height: 50px;
+      width: 30%; }
+    .registerModal .registerForm .reset {
+      display: inline-block;
+      border: none;
+      margin-top: 20px;
+      height: 50px;
+      width: 30%; }
+
+.loginModal {
+  position: fixed;
+  z-index: 99;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  visibility: hidden; }
+  .loginModal .bg {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); }
+  .loginModal .loginForm {
+    position: absolute;
+    z-index: 99;
+    background-color: #fff;
+    width: 50%;
+    left: 25%;
+    top: 25%;
+    min-height: 50%;
+    border-radius: 20px; }
+    .loginModal .loginForm .liHeader {
+      border-bottom: solid 1px #888;
+      font-family: 'Montserrat', sans-serif;
+      padding: 15px 15px 0 15px;
+      box-sizing: border-box;
+      display: flex;
+      justify-content: space-between; }
+    .loginModal .loginForm .closeWrap {
+      cursor: pointer; }
+    .loginModal .loginForm .liForm {
+      padding: 30px;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center; }
+      .loginModal .loginForm .liForm label {
+        display: block;
+        margin: 10px 0 5px 0; }
+      .loginModal .loginForm .liForm input {
+        display: block;
+        height: 30px;
+        border: none;
+        padding-left: 5px;
+        border-bottom: 1px solid #7a0026;
+        margin-bottom: 8px;
+        color: #7a0026; }
+      .loginModal .loginForm .liForm .loginSubmit {
+        width: 100%;
+        border: 1px solid #7a0026;
+        background-color: white;
+        cursor: pointer;
+        margin-top: 20px; }
+      .loginModal .loginForm .liForm .errDiv {
+        color: red;
+        font-family: pf_fusion_sans_proheavy, sans-serif;
+        font-size: 80%; }
+      .loginModal .loginForm .liForm .liSub {
+        display: inline-block;
+        border: none;
+        margin-top: 20px;
+        height: 50px;
+        width: 30%; }
+      .loginModal .loginForm .liForm .reset {
+        display: inline-block;
+        border: none;
+        margin-top: 20px;
+        height: 50px;
+        width: 30%; }
+
+.forgotModal {
+  position: fixed;
+  z-index: 99;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  visibility: hidden; }
+  .forgotModal .bg {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); }
+  .forgotModal .forgotForm {
+    position: absolute;
+    z-index: 99;
+    background-color: #fff;
+    width: 50%;
+    left: 25%;
+    top: 25%;
+    min-height: 50%;
+    border-radius: 20px; }
+    .forgotModal .forgotForm .forgotHeader {
+      border-bottom: solid 1px #888;
+      padding: 15px 15px 0 15px;
+      font-family: 'Montserrat', sans-serif;
+      box-sizing: border-box;
+      display: flex;
+      justify-content: space-between; }
+    .forgotModal .forgotForm .errDiv {
+      color: red;
+      font-family: pf_fusion_sans_proheavy, sans-serif;
+      font-size: 80%; }
+    .forgotModal .forgotForm .closeWrap {
+      cursor: pointer; }
+    .forgotModal .forgotForm .forForm {
+      padding: 30px;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center; }
+      .forgotModal .forgotForm .forForm label {
+        display: block;
+        margin: 10px 0 5px 0; }
+      .forgotModal .forgotForm .forForm input {
+        display: block;
+        width: 80%;
+        height: 30px;
+        border: 1px solid #7a0026;
+        border-radius: 5px;
+        color: #7a0026; }
+      .forgotModal .forgotForm .forForm .forgotSub {
+        display: inline-block;
+        border: none;
+        margin-top: 20px;
+        height: 50px;
+        width: 30%; }
+      .forgotModal .forgotForm .forForm .reset {
+        display: inline-block;
+        border: none;
+        margin-top: 20px;
+        height: 50px;
+        width: 30%; }
+
+.contactModal {
+  position: fixed;
+  z-index: 99;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  visibility: hidden; }
+  .contactModal .bg {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); }
+  .contactModal .contactForm {
+    position: absolute;
+    z-index: 99;
+    background-color: #fff;
+    width: 50%;
+    left: 25%;
+    top: 25%;
+    min-height: 50%;
+    border-radius: 20px; }
+    .contactModal .contactForm .contactHeader {
+      border-bottom: solid 1px #888;
+      padding: 15px 15px 0 15px;
+      font-family: 'Montserrat', sans-serif;
+      box-sizing: border-box;
+      display: flex;
+      justify-content: space-between; }
+    .contactModal .contactForm .closeWrap {
+      cursor: pointer; }
+    .contactModal .contactForm .errDiv {
+      color: red;
+      font-family: pf_fusion_sans_proheavy, sans-serif;
+      font-size: 80%; }
+    .contactModal .contactForm .conForm {
+      padding: 30px;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center; }
+      .contactModal .contactForm .conForm label {
+        display: block;
+        margin: 10px 0 5px 0; }
+      .contactModal .contactForm .conForm input {
+        display: block;
+        height: 30px;
+        width: 100%;
+        border: none;
+        border-bottom: 1px solid #7a0026;
+        margin-bottom: 8px;
+        color: #7a0026; }
+      .contactModal .contactForm .conForm textarea {
+        width: 100%;
+        resize: none; }
+      .contactModal .contactForm .conForm .conSubmit {
+        width: 100%;
+        border: 1px solid #7a0026;
+        background-color: white;
+        cursor: pointer;
+        margin-top: 20px; }
+      .contactModal .contactForm .conForm .contactSub {
+        display: inline-block;
+        border: none;
+        margin-top: 20px;
+        height: 50px;
+        width: 30%; }
+      .contactModal .contactForm .conForm .reset {
+        display: inline-block;
+        border: none;
+        margin-top: 20px;
+        height: 50px;
+        width: 30%; }
+
+.profileModal {
+  position: fixed;
+  z-index: 99;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  visibility: hidden; }
+  .profileModal .bg {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); }
+  .profileModal .proContent {
+    position: absolute;
+    z-index: 99;
+    background-color: #fff;
+    width: 50%;
+    left: 25%;
+    top: 25%;
+    min-height: 50%;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+    .profileModal .proContent .profileHeader {
+      border-bottom: solid 1px #888;
+      padding: 15px 15px 0 15px;
+      font-family: 'Montserrat', sans-serif;
+      box-sizing: border-box;
+      display: flex;
+      justify-content: space-between; }
+    .profileModal .proContent .closeWrap {
+      cursor: pointer; }
+    .profileModal .proContent .modalContent {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center; }
+
+#profileDetails {
+  padding: 10px; }
+
+#checkoutbutton {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+  #checkoutbutton input[type=button], #checkoutbutton input[type=submit] {
+    background-color: #7a0026;
+    width: 15%;
+    border: none;
+    color: #ffffff; }
+
+#adminWrapper {
+  margin-top: 100px;
+  padding: 20px; }
+
+.adminTopInformation {
+  display: flex;
+  flex-direction: row; }
+
+#checklist {
+  margin-left: 30px; }
+
+.statsHeader {
+  padding-bottom: 5px;
+  border-bottom: 1.5px #7A0026 solid;
+  width: 300px;
+  margin-bottom: 8px; }
+
+.checkedHeader {
+  padding-bottom: 5px;
+  border-bottom: 1.5px #7A0026 solid;
+  width: 300px;
+  margin-bottom: 8px; }
+
+.singleCheckout {
+  margin-bottom: 8px;
+  width: 300px; }
+
+.returnPiece {
+  margin-top: 5px;
+  width: 300px;
+  height: 33px;
+  color: #7A0026;
+  border: 1px #7A0026 solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  -webkit-transition: background-color .7s, color .7s;
+  /* For Safari 3.1 to 6.0 */
+  transition: background-color .7s, color .7s; }
+  .returnPiece:hover {
+    background-color: #7A0026;
+    color: white; }
+
+.api_back_button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px white solid;
+  color: white;
+  width: 90%;
+  height: 35px;
+  cursor: pointer;
+  -webkit-transition: background-color .7s, border .7s;
+  /* For Safari 3.1 to 6.0 */
+  transition: background-color .7s, border .7s; }
+  .api_back_button:hover {
+    background-color: #b48f4e;
+    border: 1px #b48f4e solid; }
+
+.backButtonLocation {
+  display: flex;
+  justify-content: center; }
+
+.api_detail_section {
+  background-color: #363636;
+  height: 400px;
+  margin-top: 40px;
+  margin-right: 20px;
+  margin-left: 20px;
+  border-radius: 10px;
+  padding: 10px 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center; }
+
+.messages {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  font-family: 'Montserrat Light', arial; }
+
+.rules {
+  font-size: 23px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  font-family: 'Montserrat Light', arial; }
+
+.rule {
+  font-family: 'Montserrat Light', arial; }
+
+.backButtonLocation {
+  height: 50px;
+  width: 100%; }
+
+.checkoutButton {
+  display: none;
+  width: 80%;
+  height: 40px;
+  margin-top: 0px;
+  border: 1px white solid;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-decoration: none;
+  -webkit-transition: background-color .7s, border .7s;
+  /* For Safari 3.1 to 6.0 */
+  transition: background-color .7s, border .7s; }
+  .checkoutButton:hover {
+    background-color: #b48f4e;
+    border: 1px #b48f4e solid; }
+
+.checkoutButtonWrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%; }
+
+.profileButtons {
+  display: flex;
+  flex-direction: row;
+  padding: 0 20px;
+  margin-top: 25px; }
+
+.downloadButtonWrapper {
+  margin-left: 30px; }
+
+.nothingRented {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 40px; }
+
+#profileWrapper {
+  margin-top: 60px;
+  padding: 10px; }
+
+.profileChecklist {
+  padding: 0 20px !important;
+  margin-top: 30px; }
+
+.profileReturn {
+  cursor: pointer;
+  width: 180px;
+  height: 50px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #7A0026;
+  border: 1px #7A0026 solid;
+  -webkit-transition: background-color .7s, color .7s;
+  /* For Safari 3.1 to 6.0 */
+  transition: background-color .7s, color .7s; }
+  .profileReturn:hover {
+    background-color: white;
+    color: #7A0026; }
+
+.downloadButton {
+  cursor: pointer;
+  width: 180px;
+  height: 50px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #7A0026;
+  border: 1px #7A0026 solid;
+  -webkit-transition: background-color .7s, color .7s;
+  /* For Safari 3.1 to 6.0 */
+  transition: background-color .7s, color .7s; }
+  .downloadButton:hover {
+    background-color: white;
+    color: #7A0026; }
+    .downloadButton:hover a {
+      color: #7A0026; }
+  .downloadButton a {
+    text-decoration: none;
+    color: white;
+    -webkit-transition: background-color .7s, color .7s;
+    /* For Safari 3.1 to 6.0 */
+    transition: background-color .7s, color .7s; }
+    .downloadButton a:hover {
+      color: #7A0026; }

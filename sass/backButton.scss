@@ -1,0 +1,33 @@
+
+
+.api_back_button {
+  // position: absolute;
+  // left: 10px;
+  // top: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border: 1px white solid;
+  color: white;
+  width: 90%;
+  height: 35px;
+  cursor: pointer;
+
+  -webkit-transition: background-color .7s, border .7s; /* For Safari 3.1 to 6.0 */
+  transition: background-color .7s, border .7s;
+
+ 
+
+  &:hover {
+    background-color: #b48f4e;
+    border: 1px #b48f4e solid;
+  }
+
+}
+
+.backButtonLocation {
+  display: flex;
+  justify-content: center;
+}

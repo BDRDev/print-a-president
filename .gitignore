@@ -1,1 +1,5 @@
 /node_modules
+
+classes/connection.class.php
+
+includes/constants.php
